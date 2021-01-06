@@ -34,7 +34,7 @@ public class NiceProgressBar extends View {
     private Paint wheelPaint;
 
     private int backgroundColor = Color.WHITE;
-    private int progressColor = Color.RED;
+    private int progressColor =0xffFF9800;
 
     private RectF mBackRectF;//背景总的矩形
     private RectF mProgressF; //内部进度条占据的矩形(左边半圆+长条矩形 因为右边是个转动的轮子 所以 进度条不包括右边的半圆)
@@ -254,7 +254,7 @@ public class NiceProgressBar extends View {
         canvas.translate(progressWidth + progressPadding, progressRadium + progressPadding);
         canvas.rotate(-durationMillis * 0.06f);
         canvas.drawCircle(0, 0, mHeight / 2, backgroundPaint);
-        canvas.drawCircle(0, 0, mHeight / 2 - 7, wheelPaint);
+        canvas.drawCircle(0, 0, mHeight / 2 - 7, progressPaint);
         canvas.drawBitmap(wheelPic, mWheelImageRect, mWheelRectF, null);
         canvas.restore();
 
