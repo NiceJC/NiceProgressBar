@@ -11,7 +11,7 @@ public class LeafFactory {
 
     private LeafBean GenerateLeaf(){
         LeafBean leafBean=new LeafBean();
-        leafBean.leafType=random.nextInt(4);
+        leafBean.yFactory=(float) (random.nextInt(20)-10)/10;//摆动因子 范围在-1 到 1
         leafBean.rotateDirection=random.nextInt(2);
         leafBean.rotateAngle=random.nextInt(360);
         leafBean.waitTime=random.nextInt(CYCLE_MILLI);

@@ -190,25 +190,10 @@ public class NiceProgressBar extends View {
             if (currentTime > 0) {
                 Matrix matrix = new Matrix();
                 canvas.save();
-                float yFactor = 1;
                 //过了等待时间之后 才进行绘制
-                switch (leaf.leafType) {
-                    case 0:
-                        yFactor = 0.3f;
-                        break;
-                    case 1:
-                        yFactor = -0.3f;
-                        break;
-                    case 2:
-                        yFactor = 1f;
-                        break;
-                    case 3:
-                        yFactor = -1f;
-                        break;
-                }
 
                 canvas.translate(progressWidth + progressPadding, progressRadium + progressPadding - (float) leafPic.getHeight() / 2);
-                canvas.translate(-progressWidth / (float) CYCLE_MILLI * currentTime, (float) (Math.sin(Math.PI * ((float) currentTime / CYCLE_MILLI * 2)) * (progressRadium - (float) leafPic.getHeight() / 2)) * yFactor);
+                canvas.translate(-progressWidth / (float) CYCLE_MILLI * currentTime, (float) (Math.sin(Math.PI * ((float) currentTime / CYCLE_MILLI * 2)) * (progressRadium - (float) leafPic.getHeight() / 2)) * leaf.yFactory);
                 if (leaf.rotateDirection == 1) {
                     matrix.postRotate((float) 360 / CYCLE_MILLI * currentTime + leaf.rotateAngle, (float) leafPic.getWidth() / 2, (float) leafPic.getHeight() / 2);
                 } else {
