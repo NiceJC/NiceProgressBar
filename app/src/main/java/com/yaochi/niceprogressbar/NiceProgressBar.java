@@ -142,9 +142,7 @@ public class NiceProgressBar extends View {
         super.onSizeChanged(w, h, oldw, oldh);
         mWidth = w;
         mHeight = h;
-        //进度条总长
-        //进度条半径
-        //进度条半径
+
         mBackRectF = new RectF(0, 0, mWidth, mHeight);
         mProgressF = new RectF(progressPadding, progressPadding, mWidth - mHeight / 2, mHeight - progressPadding);
         mProgressCirCleF = new RectF(progressPadding, progressPadding, mHeight - progressPadding, mHeight - progressPadding);
