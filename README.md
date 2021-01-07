@@ -1,6 +1,6 @@
 "# NiceProgressBar" 
 
-一个好看的自定义进度条
+**一个好看的带动画自定义进度条**
 
 预览效果如下
 
@@ -14,26 +14,30 @@
 导入方式：
 
 Step 1.Add it in your root build.gradle at the end of repositories:
-···
-allprojects {
-	repositories {
-		...
+
+
+	allprojects {
+		repositories {
+		..
 		maven { url 'https://jitpack.io' }
+		}
 	}
-}
-···
+
 
 Step 2. Add the dependency
-···
-dependencies {
-    implementation 'com.github.NiceJC:NiceProgressBar:1.0.0'
-}
-···
-基础用法：
-···
-//设置进度条最大值
-setMax(int a);
 
-//更新进度
-setMax(int b);
-···
+
+	dependencies {
+	    implementation 'com.github.NiceJC:NiceProgressBar:1.0.0'
+	}
+
+
+基础用法：
+
+
+	//设置进度条最大值
+	setMax(int a);
+
+	//更新进度
+	setMax(int b);
+
