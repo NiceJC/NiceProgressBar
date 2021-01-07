@@ -36,8 +36,8 @@ Step 2. Add the dependency
 
 
 	//设置进度条最大值
-	setMax(int a);
+	setMax(200);
 
 	//更新进度
-	setMax(int b);
+	setProgress(60);
 
