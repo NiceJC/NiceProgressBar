@@ -1,4 +1,4 @@
-package com.yaochi.niceprogressbar;
+package com.yaochi.nice_progress_library;
 
 /**
  *

@@ -1,4 +1,4 @@
-package com.yaochi.niceprogressbar;
+package com.yaochi.nice_progress_library;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -9,18 +9,15 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
-import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
-import androidx.core.content.res.ResourcesCompat;
 
 import java.util.List;
 
-import static com.yaochi.niceprogressbar.LeafFactory.CYCLE_MILLI;
+import static com.yaochi.nice_progress_library.LeafFactory.CYCLE_MILLI;
+
 
 public class NiceProgressBar extends View {
 

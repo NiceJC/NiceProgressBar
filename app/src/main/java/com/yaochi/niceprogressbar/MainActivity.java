@@ -7,6 +7,8 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 
+import com.yaochi.nice_progress_library.NiceProgressBar;
+
 public class MainActivity extends AppCompatActivity {
 
     private Handler handler=new Handler();
