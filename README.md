@@ -40,4 +40,6 @@ Step 2. Add the dependency
 
 	//更新进度
 	setProgress(60);
+	
+** 有问题或者建议都可以加我QQ哦  Q：626063626 **
 
